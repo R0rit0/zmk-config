@@ -94,10 +94,9 @@
             key-positions = <33 30>;
         };
 
-        Second {
-            bindings = <&to 2>;
+        First {
+            bindings = <&tog 1>;
             key-positions = <33 31>;
-            layers = <0>;
         };
 
         LShift {
@@ -108,12 +107,6 @@
         LAlt {
             bindings = <&kp LEFT_ALT>;
             key-positions = <23 24>;
-        };
-
-        First {
-            bindings = <&to 1>;
-            key-positions = <33 31>;
-            layers = <2>;
         };
     };
 
@@ -156,27 +149,27 @@
 &kp Q  &kp W  &kp L  &kp D                   &kp P              &kp K       &kp M  &kp U      &kp Y      &kp APOS
 &kp A  &kp S  &kp R  &kp T                   &kp G              &kp F       &kp N  &kp E      &kp I      &kp O
 &kp Z  &kp X  &kp C  &kp V                   &kp J              &kp B       &kp H  &kp COMMA  &kp SLASH  &mt LEFT_ALT DOT
-                     &mt LEFT_CONTROL SPACE  &msl LEFT_GUI 2    &kp LSHIFT  &mo 1
+                     &mt LEFT_CONTROL SPACE  &msl LEFT_GUI 2    &sk LSHIFT  &mo 2
             >;
         };
 
         first_layer {
             display-name = "First";
             bindings = <
-&trans  &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT    &kp LEFT    &kp DOWN       &kp UP     &kp RIGHT        &bootloader
-&trans  &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &kp TAB     &kp BACKSPACE  &kp ENTER  &kp ESCAPE       &kp DELETE
-&trans  &kp K_BACK      &TBack        &TNext          &kp K_FORWARD      &kp K_MENU  &mkp LCLK      &mkp RCLK  &kp PRINTSCREEN  &mt LEFT_ALT CAPSLOCK
-                                      &trans          &trans             &trans      &trans
+&bootloader   &trans        &kp MINUS     &kp EQUAL     &trans          &trans        &kp SEMICOLON  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7   &kp NUMBER_8      &kp NUMBER_9       &kp NUMBER_0
+&trans        &trans        &trans        &trans        &trans          &trans        &kp GRAVE      &kp COMMA         &kp SLASH          &kp DOT
+                                          &trans        &trans          &trans        &trans
             >;
         };
 
         second_layer {
             display-name = "Second";
             bindings = <
-&bootloader   &trans        &kp MINUS     &kp EQUAL     &trans          &trans        &kp SEMICOLON  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7   &kp NUMBER_8      &kp NUMBER_9       &kp NUMBER_0
-&trans        &trans        &trans        &trans        &trans          &trans        &kp GRAVE      &kp COMMA         &kp SLASH          &kp DOT
-                                          &trans        &trans          &trans        &mo 1
+&trans  &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT    &kp LEFT    &kp DOWN       &kp UP     &kp RIGHT        &bootloader
+&trans  &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &kp TAB     &kp BACKSPACE  &kp ENTER  &kp ESCAPE       &kp DELETE
+&trans  &kp K_BACK      &TBack        &TNext          &kp K_FORWARD      &kp K_MENU  &mkp LCLK      &mkp RCLK  &kp PRINTSCREEN  &mt LEFT_ALT CAPSLOCK
+                                      &trans          &trans             &trans      &trans
             >;
         };
 
