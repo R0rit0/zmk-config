@@ -95,8 +95,9 @@
         };
 
         Second {
-            bindings = <&tog 2>;
+            bindings = <&to 2>;
             key-positions = <33 31>;
+            layers = <0>;
         };
 
         LShift {
@@ -107,6 +108,12 @@
         LAlt {
             bindings = <&kp LEFT_ALT>;
             key-positions = <23 24>;
+        };
+
+        First {
+            bindings = <&to 1>;
+            key-positions = <33 31>;
+            layers = <2>;
         };
     };
 
