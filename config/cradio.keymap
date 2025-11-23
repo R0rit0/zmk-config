@@ -91,7 +91,7 @@
 
         Tri {
             bindings = <&tog 3>;
-            key-positions = <33 30>;
+            key-positions = <30 32 13>;
         };
 
         First {
@@ -149,7 +149,7 @@
 &kp Q  &kp W  &kp L  &kp D                   &kp P              &kp K       &kp M  &kp U      &kp Y      &kp APOS
 &kp A  &kp S  &kp R  &kp T                   &kp G              &kp F       &kp N  &kp E      &kp I      &kp O
 &kp Z  &kp X  &kp C  &kp V                   &kp J              &kp B       &kp H  &kp COMMA  &kp SLASH  &mt LEFT_ALT DOT
-                     &mt LEFT_CONTROL SPACE  &msl LEFT_GUI 2    &sk LSHIFT  &mo 2
+                     &mt LEFT_CONTROL SPACE  &msl LEFT_GUI 1    &sk LSHIFT  &mo 2
             >;
         };
 
