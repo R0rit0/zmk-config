@@ -166,10 +166,10 @@
         Default_layer {
             display-name = "Def";
             bindings = <
-&kp Q            &kp W                &kp L             &kp D              &kp P           &kp K            &kp M               &kp U              &kp Y                 &kp TAB
-&hml LEFT_ALT A  &hml LEFT_CONTROL S  &hml LEFT_META R  &hml LEFT_SHIFT T  &kp G           &kp F            &hmr RIGHT_SHIFT N  &hmr RIGHT_META E  &hmr RIGHT_CONTROL I  &hmr RIGHT_ALT O
-&kp Z            &kp X                &kp C             &kp V              &kp J           &kp B            &kp H               &kp COMMA          &kp SLASH             &kp DOT
-                                                        &kp SPACE          &lt 1 ESCAPE    &lt 2 BACKSPACE  &kp RETURN
+&kp Q  &kp W            &kp L                &kp D              &kp P               &kp K              &kp M               &kp U                 &kp Y             &kp TAB
+&kp A  &hml LEFT_ALT S  &hml LEFT_CONTROL R  &hml LEFT_SHIFT T  &hml LEFT_META G    &hmr RIGHT_META F  &hmr RIGHT_SHIFT N  &hmr RIGHT_CONTROL E  &hmr RIGHT_ALT I  &kp O
+&kp Z  &kp X            &kp C                &kp V              &kp J               &kp B              &kp H               &kp COMMA             &kp SLASH         &kp DOT
+                                             &kp SPACE          &lt 1 ESCAPE        &lt 2 BACKSPACE    &kp RETURN
             >;
         };
 
