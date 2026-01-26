@@ -114,7 +114,14 @@
         };
     };
 
-    conditional_layers { compatible = "zmk,conditional-layers"; };
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        Numbers {
+            if-layers = <1 2>;
+            then-layer = <3>;
+        };
+    };
 
     combos {
         compatible = "zmk,combos";
@@ -122,11 +129,6 @@
         Func {
             bindings = <&mo 4>;
             key-positions = <32 31>;
-        };
-
-        Numb {
-            bindings = <&mo 3>;
-            key-positions = <33 30>;
         };
 
         Copy {
@@ -189,7 +191,7 @@
 &kp Q  &kp W            &kp L                &kp D             &kp P                &kp K               &kp M              &kp U                 &kp Y             &kp ESCAPE
 &kp A  &hml LEFT_ALT S  &hml LEFT_CONTROL R  &hml LEFT_META T  &hml LEFT_SHIFT G    &hmr RIGHT_SHIFT F  &hmr RIGHT_META N  &hmr RIGHT_CONTROL E  &hmr RIGHT_ALT I  &kp O
 &kp Z  &kp X            &kp C                &kp V             &kp J                &kp B               &kp H              &kp COMMA             &kp SLASH         &kp DOT
-                                             &lt 1 SPACE       &kp ENTER            &kp LEFT_SHIFT      &lt 2 BACKSPACE
+                                             &lt 1 SPACE       &kp ENTER            &sk LEFT_SHIFT      &lt 2 BACKSPACE
             >;
         };
 
