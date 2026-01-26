@@ -54,10 +54,14 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <150>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
             global-quick-tap;
             bindings = <&kp>, <&kp>;
+
+            hold-trigger-key-positions = <11 12 13 16 17 18 10 19>;
+            hold-trigger-on-release;
+            require-prior-idle-ms = <150>;
         };
 
         msl: Mod_S_Layer {
