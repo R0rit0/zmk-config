@@ -198,7 +198,7 @@
         Navigation {
             display-name = "Nav";
             bindings = <
-&bootloader  &trans        &trans            &trans         &trans    &trans      &kp K_CONTEXT_MENU  &kp PRINTSCREEN  &kp CAPS       &trans
+&bootloader  &trans        &trans            &trans         &trans    &trans      &trans              &trans           &trans         &trans
 &kp LSHIFT   &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_META  &trans    &kp LEFT    &kp DOWN_ARROW      &kp UP_ARROW     &kp RIGHT      &kp DELETE
 &trans       &trans        &trans            &trans         &trans    &kp K_BACK  &TBack              &TNext           &kp K_FORWARD  &trans
                                              &trans         &trans    &trans      &trans
@@ -210,7 +210,7 @@
             bindings = <
 &trans   &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT    &trans  &trans          &trans             &trans         &bootloader
 &kp TAB  &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &trans  &kp RIGHT_META  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RSHIFT
-&trans   &trans          &trans        &trans          &trans             &trans  &mkp LCLK       &mkp RCLK          &trans         &trans
+&trans   &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT    &trans  &mkp LCLK       &mkp RCLK          &trans         &trans
                                        &trans          &trans             &trans  &trans
             >;
         };
