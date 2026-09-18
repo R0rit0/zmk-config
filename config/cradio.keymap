@@ -198,9 +198,9 @@
         Navigation {
             display-name = "Nav";
             bindings = <
-&bootloader  &trans        &trans            &trans         &trans    &trans      &trans              &trans           &trans         &trans
+&trans       &kp SQT       &kp MINUS         &kp EQUAL      &kp GRAVE &kp BACKSLASH  &kp SEMICOLON  &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &trans
 &kp LSHIFT   &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_META  &trans    &kp LEFT    &kp DOWN_ARROW      &kp UP_ARROW     &kp RIGHT      &kp DELETE
-&trans       &trans        &trans            &trans         &trans    &kp K_BACK  &TBack              &TNext           &kp K_FORWARD  &trans
+&bootloader  &trans        &trans            &trans         &trans    &kp K_BACK  &TBack              &TNext           &kp K_FORWARD  &trans
                                              &trans         &trans    &trans      &trans
             >;
         };
@@ -208,9 +208,9 @@
         Mouse {
             display-name = "Mou";
             bindings = <
-&trans   &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT    &trans  &trans          &trans             &trans         &bootloader
+&trans   &kp DOUBLE_QUOTES  &kp UNDERSCORE  &kp PLUS        &kp TILDE          &kp PIPE  &kp COLON       &kp LEFT_BRACE     &kp RIGHT_BRACE  &trans
 &kp TAB  &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &trans  &kp RIGHT_META  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RSHIFT
-&trans   &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT    &trans  &mkp LCLK       &mkp RCLK          &trans         &trans
+&trans   &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT    &trans  &mkp LCLK       &mkp RCLK          &trans         &bootloader
                                        &trans          &trans             &trans  &trans
             >;
         };
@@ -218,7 +218,7 @@
         Numbers {
             display-name = "Num";
             bindings = <
-&trans                &trans        &kp MINUS     &kp EQUAL     &kp GRAVE      &kp BACKSLASH  &kp SEMICOLON  &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp SQT
+&trans                &trans        &trans            &trans         &trans      &trans                &trans        &trans            &trans         &trans
 &hml LSHIFT NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5         &kp NUMBER_6   &kp NUMBER_7   &kp NUMBER_8      &kp NUMBER_9          &hmr RSHIFT N0
 &kp EXCLAMATION       &kp AT_SIGN   &kp HASH      &kp DOLLAR    &kp PERCENT    &kp CARET      &kp AMPERSAND  &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
                                                   &trans        &trans         &trans         &trans
