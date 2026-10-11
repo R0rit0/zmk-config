@@ -61,9 +61,9 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            require-prior-idle-ms = <200>;
-            tapping-term-ms = <160>;
-            quick-tap-ms = <160>;
+            require-prior-idle-ms = <250>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
             bindings = <&kp>, <&kp>;
 
             // Removed (Causes visual delay) hold-trigger-on-release;
@@ -74,10 +74,10 @@
         hmr: home_row_mod_right {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
-            require-prior-idle-ms = <200>;
-            tapping-term-ms = <160>;
-            quick-tap-ms = <160>;
+            flavor = "balanced";            
+            require-prior-idle-ms = <250>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
             bindings = <&kp>, <&kp>;
 
             // Removed (Causes visual delay) hold-trigger-on-release;
