@@ -254,11 +254,12 @@
         Sniper_layer {
             display-name = "Snip";
             bindings = <
-&trans  &trans                   &trans                 &trans                   &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &mmv_slow MOVE_LEFT(300) &mmv_slow MOVE_UP(300) &mmv_slow MOVE_DOWN(300) &mmv_slow MOVE_RIGHT(300) &trans  &trans  &trans  &trans  &trans
-&trans  &trans                   &trans                 &trans                   &trans                    &trans  &trans  &trans  &trans  &trans
-                                                        &trans                   &trans                    &trans  &trans
-    >;
+&trans  &trans                  &trans                  &trans                 &trans                   &trans  &trans  &trans  &trans  &trans
+&trans  &mmv_slow MOVE_X(-300)  &mmv_slow MOVE_Y(-300)  &mmv_slow MOVE_Y(300)  &mmv_slow MOVE_X(300)    &trans  &trans  &trans  &trans  &trans
+&trans  &trans                  &trans                  &trans                 &trans                   &trans  &trans  &trans  &trans  &trans
+                                                        &trans                 &trans                   &trans  &trans
+            >;
+        };
 };
     };
 };
