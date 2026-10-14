@@ -121,15 +121,6 @@
             time-to-max-speed-ms = <40>;      // 500
             delay-ms = <0>;                   // 10
         };
-
-        mmv_slow: behavior_mouse_move_slow {
-            compatible = "zmk,behavior-input-two-axis";
-            #binding-cells = <1>;
-            x-input-code = <INPUT_REL_X>;
-            y-input-code = <INPUT_REL_Y>;
-            time-to-max-speed-ms = <300>; 
-            acceleration-exponent = <0>;
-        };
     };
 
     conditional_layers {
@@ -256,7 +247,7 @@
             display-name = "Snip";
             bindings = <
 &trans  &trans                  &trans                  &trans                 &trans                   &trans  &trans  &trans  &trans  &trans
-&trans  &mmv_slow MOVE_X(-300)  &mmv_slow MOVE_Y(-300)  &mmv_slow MOVE_Y(300)  &mmv_slow MOVE_X(300)    &trans  &trans  &trans  &trans  &trans
+&trans  &mmv MOVE_X(-150)       &mmv MOVE_Y(-150)       &mmv MOVE_Y(150)       &mmv MOVE_X(150)         &trans  &trans  &trans  &trans  &trans
 &trans  &trans                  &trans                  &trans                 &trans                   &trans  &trans  &trans  &trans  &trans
                                                         &trans                 &trans                   &trans  &trans
             >;
